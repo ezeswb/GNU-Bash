@@ -1,0 +1,8 @@
+Equipo Maximo Goles: 'Real Madrid' = 50
+
+Equipo Minimo Goles: 'Boca Juniors' = 22
+
+Equipo Maximo Amarillas: 'Boca Juniors' = 19
+
+Equipo Minimo Rojas: 'Bayern Munich' = 10
+

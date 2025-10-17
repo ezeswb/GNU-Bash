@@ -1,0 +1,22 @@
+"crontab apuntes"
+
+crontab -l 'lista contabs'
+crontab -r 'elimina crontab'
+crontab -e 'crea nuevo contrab'
+
+export EDITOR="nano"
+
+"Formato o sintaxis crontab"
+
+Minutos		|		Hora	|	Dia Mes		|	Mes Anio	|	Dia Semana	|	Script o Comando
+0-59				0-23		1-31				1-12			0-7
+															(0&7SonDomingos)
+*					*			*					*				*				Script
+
+* 'Todos los valores posibles'
+1 'Tiempo determinado'
+1,2,3 '1,2 y 3'
+1-10 'Primeros 10 minutos u horas'
+*/50 'Cada x=50 tiempo'
+
+
