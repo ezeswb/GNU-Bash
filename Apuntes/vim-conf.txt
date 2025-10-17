@@ -1,0 +1,25 @@
+syntax on           		"Actica la sintaxis"
+
+set viminfo='1000,<10000	"Guarda información sobre el historial de archivos, comandos y búsquedas, con ciertos límites."
+
+autocmd BufReadPost * if line("'\"") > 1 && line("'\"") <= line("$") | execute "normal! g`\"" | endif "Cuando se abre un archivo, mueve el cursor a la última posición registrada."
+
+"set background=dark			Configura el esquema de colores para un fondo oscuro."
+set number              	"Muestra los números de línea."
+set showmode            	"Muestra el modo en el que está Vim (insert, normal, etc.)."
+set tabstop=4           	"Configura el ancho de un tabulador a 4 espacios."
+set nobackup            	"Desactiva la creación de archivos de respaldo."
+set nowritebackup       	"Evita la creación de archivos de respaldo antes de escribir un archivo."
+set noswapfile          	"No crea archivos de intercambio, que usualmente se usan para recuperación de fallos."
+set wrap					"se dividan visualmente y continúen en la siguiente línea de la pantalla"
+set linebreak				"líneas se rompan en espacios entre palabras, no en cualquier lugar (como en medio de una palabra)."
+set hlsearch				"Resalta palabras palabra buscada"
+set incsearch				"Resalta palabras que coincidan con la busqueda"
+set ignorecase				"Ignora mayusculas y minusculas, pero si se escribe tal cual lo encuentra"
+colorscheme desert			"Activa es esquema de colores pablo o desert"
+
+hi Normal		ctermbg=NONE guibg=NONE
+hi NonText		ctermbg=NONE guibg=NONE
+"hi LineNr		ctermbg=NONE guibg=NONE"
+"hi SignColumn	ctermbg=NONE guibg=NONE"
+
